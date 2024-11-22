@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import { MyComponent } from "./MyComponent";
 
 function App() {
   return (
@@ -10,6 +11,13 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        {/* This div with class myFooCss
+        writes blablabla and the name of the css color applied
+        */}
+        <MyComponent />
+        <div className="myFooCss" id="thisIsSupposeToBeRed">
+          bla bla bla rouge
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
